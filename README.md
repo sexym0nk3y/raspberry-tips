@@ -20,3 +20,20 @@ Gzip backup command line. Backup time may take time. About 1 hour for a 32GB car
 </pre>
 
 <small>Default SD CARD DEVICE ID : <code>mmcblk0</code></small>
+
+## Send an email notification when someone logs in through SSH
+
+1. Create a new folder in <code>/usr</code>
+    ```
+    sudo mkdir /usr/custom
+    ```
+2. Create a new script <code>sudo touch /usr/custom/ssh_alert.sh</code>
+3. Change permissions 
+    ```
+    sudo chmod 0700 /usr/custom/ssh_alert.sh && chown root:root /usr/custom/ssh_alert.sh
+    ```
+4. Use your favorite editor to edit the file and copy and paste this file [ssh_alert.sh](scripts/ssh_alert.sh)
+5. Final step - add this line at the end of <code>/etc/pam.d/sshd</code>
+   ```
+   session required pam_exec.so /usr/custom/ssh_alert.sh
+   ```
