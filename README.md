@@ -7,10 +7,10 @@
 Execute <code>sudo nano /etc/fstab</code> and add :
 
 <pre>
-//&lt;IPADRRESS>/&lt;DIRECTORY> /mnt/&lt;LOCALDIRECTORY> cifs user=&lt;USERNAME>,pass=&lt;PASSWORD>,x-systemd.automount 0 0
+//&lt;IPADRRESS>/&lt;DIRECTORY> /mnt/&lt;LOCALDIRECTORY> cifs user=&lt;USERNAME>,pass=&lt;PASSWORD>,uid=&lt;UID>,x-systemd.automount 0 0
 </pre>
 
-Get user uid: <code>id -u &lt;username></code>
+Get user uid: <code>id -u &lt;username></code> Default: pi username.
 
 ## Backup:  SD Card Image command line
 
