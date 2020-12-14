@@ -23,6 +23,8 @@ Gzip backup command line. Backup time may take time. About 1 hour for a 32GB car
 
 ## Send an email notification when someone logs in through SSH
 
+/!\ Require <code>sendmail</code>.
+
 1. Create a new folder in <code>/usr</code>
     ```
     sudo mkdir /usr/custom
