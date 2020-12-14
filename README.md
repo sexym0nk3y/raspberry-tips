@@ -12,6 +12,8 @@ Execute <code>sudo nano /etc/fstab</code> and add :
 
 Get user uid: <code>id -u &lt;username></code> Default: pi username.
 
+Mount folder <code>sudo mount -a</code>
+
 ## Backup:  SD Card Image command line
 
 Gzip backup command line. Backup time may take time. About 1 hour for a 32GB card
