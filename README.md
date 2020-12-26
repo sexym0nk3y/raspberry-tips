@@ -1,6 +1,38 @@
 <div align="center">
-    <h1>Raspberry tips</h1>
+    <h1>Raspberry Tips & Tricks & Hacks</h1>
 </div>
+
+## General ##
+
+Change root password : <code>sudo passwd root</code>
+
+## Enable SSH before first boot
+
+Recent Raspbian disabled SSH by default.
+
+If you want to enable SSH, all you need to do is to put a file called <code>ssh</code> in the <code>/boot/</code> directory.
+
+Default user / password : <code>pi</code> / <code>raspberry</code>
+
+## Install & Enabling VNC
+
+Install VNC with
+<pre>
+sudo apt update
+sudo apt install realvnc-vnc-server
+</pre>
+
+You can enable VNC Server with
+<pre>sudo raspi-config</pre>
+
+Navigate to <strong>Interfacing Options</strong> and select <strong>VNC > Yes</strong>
+
+### Troubleshooting ###
+
+#### Cannot Currently Show the Desktop ####
+Launch <code>sudo raspi-config</code>
+
+Select <code>Advanced Options > Resolution</code> and select a lower resolution. And reboot.
 
 ## Mount a CIFS Share Folder
 
