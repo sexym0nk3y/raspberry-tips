@@ -25,14 +25,14 @@ sudo apt install realvnc-vnc-server
 You can enable VNC Server with
 <pre>sudo raspi-config</pre>
 
-Navigate to <strong>Interfacing Options</strong> and select <strong>VNC > Yes</strong>
+Navigate to <strong>Interface Options</strong> and select <strong>VNC > Yes</strong>
 
 ### Troubleshooting ###
 
 #### Cannot Currently Show the Desktop ####
 Launch <code>sudo raspi-config</code>
 
-Select <code>Advanced Options > Resolution</code> and select a lower resolution. And reboot.
+Select <code>Interface Options > Resolution</code> and select a lower resolution. And reboot.
 
 ## Mount a CIFS Share Folder
 
