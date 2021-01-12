@@ -36,6 +36,8 @@ Select <code>Interface Options > Resolution</code> and select a lower resolution
 
 ## Mount a CIFS Share Folder
 
+Execute <code>sudo mkdir /mnt/&lt;LOCALDIRECTORY></code>: Change <code>&lt;LOCALDIRECTORY ></code> with your folder name.
+
 Execute <code>sudo nano /etc/fstab</code> and add :
 
 <pre>
